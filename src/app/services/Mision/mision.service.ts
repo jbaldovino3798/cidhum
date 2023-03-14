@@ -15,8 +15,8 @@ export class MisionService {
   constructor(public http:HttpClient) { }
 
   getAllMisionEnc(){
-    let url = environment.api+"MisionEnc/GetAll";
-    return this.http.get<any[]>(url);
+    //let url = environment.api+"MisionEnc/GetAll";
+    //return this.http.get<any[]>(url);
   }
 
 
