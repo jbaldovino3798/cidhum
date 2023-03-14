@@ -2,7 +2,7 @@
     <div class="navbar-collapse collapse show" id="navbar">
         <ul class="navbar-nav text-right">              
             <div class="nav-item">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" [routerLink]="['/login']">
                     Iniciar Sesión <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" width="25" height="25" alt="User" title="User">
                 </a>
             </div>
@@ -29,13 +29,14 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sobre CIDHUM
+                        Acerca del CIDHUM
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">                            
+                            <a class="dropdown-item" [routerLink]="['/about']">CIDHUM</a>
                             <a class="dropdown-item" [routerLink]="['/mision']">Misión</a>
-                            <a class="dropdown-item" [routerLink]="['/equipoList']">Visión</a>
-                            <a class="dropdown-item" [routerLink]="['/equipoList']">Miembros</a>
-                            <a class="dropdown-item" [routerLink]="['/equipoList']">Contacto</a>
+                            <a class="dropdown-item" [routerLink]="['/vision']">Visión</a>
+                            <a class="dropdown-item" [routerLink]="['/miembros']">Miembros</a>
+                            <a class="dropdown-item" [routerLink]="['/contacto']">Contacto</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -43,9 +44,9 @@
                             Grupos de Investigación
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" [routerLink]="['/cuidadorAdd']">Grupo CIDHUM</a>
-                        <a class="dropdown-item" [routerLink]="['/cuidadorList']">Grupo de Psicologia</a>
-                        <a class="dropdown-item" [routerLink]="['/cuidadorList']">Grupo de PBX</a>
+                        <a class="dropdown-item" [routerLink]="['/gidhum']">Grupo CIDHUM</a>
+                        <a class="dropdown-item" [routerLink]="['/gpsicologia']">Grupo de Psicología</a>
+                        <a class="dropdown-item" [routerLink]="['/gpbx']">Grupo de PBX</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

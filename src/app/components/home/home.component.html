@@ -1,17 +1,17 @@
+<app-header></app-header>
 <div class="container-fluid text-center">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./assets/images/imagen.jpg" alt="First image" width="600" height="300">
-            </div>
-            <!-- 
+                <img class="img-fluid rounded-4 hover-shadow" src="./assets/images/imagen.jpg" alt="First image" width="600" height="300">
+            </div>            
             <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
+                <img class="img-fluid rounded-4 hover-shadow" src="https://th.bing.com/th/id/R.b333e09266e092f5959bb28a3f830c81?rik=JHwkN3W2AMXtrg&riu=http%3a%2f%2friaci.org%2fwp-content%2fuploads%2f2017%2f02%2fUninorte.png&ehk=QvOmy11TgeeBbYxcBzOWhbHgXoRv8TZSD0fSLovWCsY%3d&risl=&pid=ImgRaw&r=0"
+                width="600" height="300" alt="Second slide">
             </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
-            </div>
-            -->
+                <img class="img-fluid rounded-4 hover-shadow"src="https://www.uninorte.edu.co/o/uninorte-theme/images/uninorte/footer_un/logo.png"  width="600" height="300" alt="Third slide">
+            </div>            
         </div>
     </div>
 
@@ -19,81 +19,38 @@
 </div>
 <div class="container-fluid text-center">    
     <div class="d-flex row justify-content-center">
-        <div class="col-sm-6">            
-            <div class="card">
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
+        <div class="col-sm-4">            
+            <h5>Noticias</h5>
+            <ul class="list-group list-group-light mb-3">
+                <li class="list-group-item">
+                  <h5 class="fw-bold">Our company starts its operations</h5>
+                  <p class="text-muted mb-2 fw-bold">11 March 2020</p>
+                  <p class="text-muted mb-0">
+                    Some placeholder content in a paragraph relating to "Our company starts its operations". And some
+                    more content, used here just to pad out and fill this tab panel. In production, you would obviously
+                    have more real content here. And not just text. It could be anything, really. Text, images, forms.
+                  </p>
+                  </li>
+                  <li class="list-group-item">
+                    <h5 class="fw-bold">First customer</h5>
+                    <p class="text-muted mb-2 fw-bold">19 March 2020</p>
+                    <p class="text-muted mb-0">
+                      Some placeholder content in a paragraph relating to "First customer". And some more content,
+                      used here just to pad out and fill this tab panel. In production, you would obviously have more real
+                      content here. And not just text. It could be anything, really. Text, images, forms.
+                    </p>
+                  </li>
+                  <li class="list-group-item">
+                    <h5 class="fw-bold">Our team exceeds 10 people</h5>
+                    <p class="text-muted mb-2 fw-bold">24 June 2020</p>
+                    <p class="text-muted mb-0">
+                      Some placeholder content in a paragraph relating to "Our team exceeds 10 people". And some more
+                      content, used here just to pad out and fill this tab panel. In production, you would obviously
+                      have more real content here. And not just text. It could be anything, really. Text, images, forms.
+                    </p>
+                </li>
+              </ul>
+              <a class="btn btn-outline-dark btn-rounded w-100" href="#" role="button" data-ripple-color="dark">View all</a>
         </div>
-    </div>
-    
-    <!-- 
-    <div class="row">
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                Acerca del CIDHUM
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item" [routerLink]="['/mision']">Misión</li>
-                <li class="list-group-item" [routerLink]="['/']">Visión</li>
-                <li class="list-group-item" [routerLink]="['/']">Miembros</li>
-                <li class="list-group-item" [routerLink]="['/']">Contacto</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                Grupos de Investigación
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item" [routerLink]="['/']">Grupo CIDHUM</li>
-                <li class="list-group-item" [routerLink]="['/']">Grupo de Psicologia</li>
-                <li class="list-group-item" [routerLink]="['/']">Grupo PBX</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                Impacto Social
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item" [routerLink]="['/']">Proyectos</li>
-                <li class="list-group-item" [routerLink]="['/']">Programas</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                Biblioteca
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item" [routerLink]="['/']">Libros</li>
-                <li class="list-group-item" [routerLink]="['/']">Articulos</li>
-                <li class="list-group-item" [routerLink]="['/']">Instrumentos</li>
-                <li class="list-group-item" [routerLink]="['/']">Blog</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-md">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                Noticias
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-</div>
+    </div>  
+</div>  

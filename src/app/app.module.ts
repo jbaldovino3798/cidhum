@@ -9,6 +9,15 @@ import { HeaderComponent } from './templates/header/header.component';
 
 import { MisionService } from './services/Mision/mision.service';
 import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VisionComponent } from './components/vision/vision.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { MiembrosComponent } from './components/miembros/miembros.component';
+import { GidhumComponent } from './components/gidhum/gidhum.component';
+import { GpsicologiaComponent } from './components/gpsicologia/gpsicologia.component';
+import { GpbxComponent } from './components/gpbx/gpbx.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +26,20 @@ import { HomeComponent } from './components/home/home.component';
     FooterComponent,
     HeaderComponent,
     HomeComponent,
-    MisionComponent
+    MisionComponent,
+    LoginComponent,
+    VisionComponent,
+    ContactoComponent,
+    MiembrosComponent,
+    GidhumComponent,
+    GpsicologiaComponent,
+    GpbxComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [
     MisionService
